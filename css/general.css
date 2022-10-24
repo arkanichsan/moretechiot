@@ -1,0 +1,269 @@
+body{
+	line-height: 1.15;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	color:#2A2A2A;
+}
+
+*:focus {
+    outline: none;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=date], input[type=time], textarea, select{
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+	border-radius: 10px;
+	padding: 0 6px;
+	font-size: 15px;
+/*	font: inherit;*/
+	height:31px;
+	box-sizing:border-box;
+}
+
+input[type=text].error, input[type=password].error, input[type=number].error, input[type=date].error, input[type=time].error, textarea.error, select.error{
+    border: 1px solid #FF8484;
+    background-color: #FFF7F6;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=date]:focus, input[type=time]:focus, textarea:focus, select:focus{
+    border: 1px solid #aaa;
+	box-shadow: 0 1px 6px rgba(0,0,0,0.175);
+}
+
+input[type=text].error:focus, input[type=password].error:focus, input[type=number].error:focus, textarea.error:focus, select.error:focus{
+    border: 1px solid #F00;
+}
+
+input[type=button], input[type=submit], button, .button{
+	border-radius: 0;
+	padding: 6px 20px;
+	font-size: 15px;
+    color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+	border: 1px solid #fefefe;
+    /* background-color: #4d90fe; */
+    background-image: linear-gradient(#035002 0px, #1bff00 250%);
+	/*height:33px;*/
+}
+
+input[type=button]:not([disabled]):hover, input[type=submit]:not([disabled]):hover, button:not([disabled]):hover, .button:not([disabled]):hover,
+input[type=button]:not([disabled]).hover, input[type=submit]:not([disabled]).hover, button:not([disabled]).hover, .button:not([disabled]).hover{
+	border: 1px solid #fefefe;
+    /* background-color: #357ae8; */
+    /* background-image: linear-gradient(to bottom, #4d90fe, #357ae8); */
+}
+
+input[type=button]:not([disabled]):active, input[type=submit]:not([disabled]):active, button:not([disabled]):active, .button:not([disabled]):active{
+	box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
+	color:transparent;
+	text-shadow: 1px 1px rgba(255, 255, 255, 1);
+}
+
+input.gray[type=button], input.gray[type=submit], button.gray, .button.gray{
+    color: #fefefe;
+	border: 1px solid #B3B3B3;
+    background-color: #fefefe;
+    background-image: linear-gradient(to bottom, #035002, #035002);
+}
+
+input.gray[type=button]:not([disabled]):hover, input.gray[type=submit]:not([disabled]):hover, button.gray:not([disabled]):hover, .button.gray:not([disabled]):hover,
+input.gray[type=button]:not([disabled]).hover, input.gray[type=submit]:not([disabled]).hover, button.gray:not([disabled]).hover, .button.gray:not([disabled]).hover{
+	border: 1px solid #7D7D7D;
+    background-color: #e6e8e8;
+    background-image: linear-gradient(to bottom, #035002, #035002);
+}
+
+input.gray[type=button]:not([disabled]):active, input.gray[type=submit]:not([disabled]):active, button.gray:not([disabled]):active, .button.gray:not([disabled]):active{
+	box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
+	color:transparent;
+	text-shadow: 1px 1px rgba(96, 96, 96, 1);
+}
+
+input.red[type=button], input.red[type=submit], button.red, .button.red{
+    color: #FFFFFF;
+	border: 1px solid #fefefe;
+    background-color: #b90004;
+    background-image: linear-gradient(to bottom, #b90004, #b65a5d);
+}
+
+input.red[type=button]:not([disabled]):hover, input.red[type=submit]:not([disabled]):hover, button.red:not([disabled]):hover, .button.red:not([disabled]):hover,
+input.red[type=button]:not([disabled]).hover, input.red[type=submit]:not([disabled]).hover, button.red:not([disabled]).hover, .button.red:not([disabled]).hover{
+	border: 1px solid #810300;
+    background-color: #a00005;
+    background-image: linear-gradient(to bottom, #b90004, #a00005);
+}
+
+input.red[type=button]:not([disabled]):active, input.red[type=submit]:not([disabled]):active, button.red:not([disabled]):active, .button.red:not([disabled]):active{
+	box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
+	color:transparent;
+	text-shadow: 1px 1px rgba(255, 255, 255, 1);
+}
+
+input[type=button]:disabled, input[type=submit]:disabled, button:disabled, .button[disabled]{
+	opacity: 0.5;
+	cursor: default;
+	/*color: transparent;*/
+}
+
+button:not([disabled]):active svg{
+	position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+img{
+	/*float:left;*/
+}
+
+a{
+	color:#035002;
+	text-decoration:none;
+}
+
+a:hover, a:active{
+	text-decoration:underline;
+}
+
+
+/*button loader*/
+.button-loader {
+	width: 20px;
+	height: 20px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-10px;
+	margin-left:-10px;
+	display:none;
+}
+
+.button-loader .circle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.button-loader .circle:before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  height: 15%;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: circleFadeDelay 1.2s infinite ease-in-out both;
+          animation: circleFadeDelay 1.2s infinite ease-in-out both;
+}
+.button-loader .circle2 {
+  -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+.button-loader .circle3 {
+  -webkit-transform: rotate(60deg);
+      -ms-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+.button-loader .circle4 {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.button-loader .circle5 {
+  -webkit-transform: rotate(120deg);
+      -ms-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+.button-loader .circle6 {
+  -webkit-transform: rotate(150deg);
+      -ms-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+.button-loader .circle7 {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.button-loader .circle8 {
+  -webkit-transform: rotate(210deg);
+      -ms-transform: rotate(210deg);
+          transform: rotate(210deg);
+}
+.button-loader .circle9 {
+  -webkit-transform: rotate(240deg);
+      -ms-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+.button-loader .circle10 {
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+.button-loader .circle11 {
+  -webkit-transform: rotate(300deg);
+      -ms-transform: rotate(300deg);
+          transform: rotate(300deg); 
+}
+.button-loader .circle12 {
+  -webkit-transform: rotate(330deg);
+      -ms-transform: rotate(330deg);
+          transform: rotate(330deg); 
+}
+.button-loader .circle2:before {
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s; 
+}
+.button-loader .circle3:before {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s; 
+}
+.button-loader .circle4:before {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s; 
+}
+.button-loader .circle5:before {
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s; 
+}
+.button-loader .circle6:before {
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s; 
+}
+.button-loader .circle7:before {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s; 
+}
+.button-loader .circle8:before {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s; 
+}
+.button-loader .circle9:before {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+.button-loader .circle10:before {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+.button-loader .circle11:before {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+.button-loader .circle12:before {
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+}
+
+@-webkit-keyframes circleFadeDelay {
+  0%, 39%, 100% { opacity: 0; }
+  40% { opacity: 1; }
+}
+
+@keyframes circleFadeDelay {
+  0%, 39%, 100% { opacity: 0; }
+  40% { opacity: 1; } 
+}

@@ -1,0 +1,309 @@
+/* Camera Widget*/
+body #content{
+	--widget-camera-placeholder: url('../image/video_placeholder_light.svg');
+	--widget-camera-loader: url('../image/loader.gif');
+	--widget-camera-loader-background: var(--widget-loader-background);
+	--widget-camera-table-border: var(--widget-border);
+	--widget-camera-table-head-background: linear-gradient(to bottom, #FFFFFF, #EFEFEF);
+	--widget-camera-table-body-background-active: #f3f3f3;
+	--widget-camera-filter-icon: var(--widget-setting-icon);
+	--widget-camera-filter-icon-hover: var(--widget-setting-icon-hover);
+	--widget-camera-datepicker-background: linear-gradient(to bottom, #FFFFFF, #EFEFEF);
+	--widget-camera-datepicker-button-hover: #CCCCCC;
+	--widget-camera-datepicker-icon: #2A2A2A;
+	--widget-camera-datepicker-date: #999999;
+}
+
+body.dark #content {
+	--widget-camera-placeholder: url('../image/video_placeholder_dark.svg');
+	--widget-camera-loader: url('../image/loader_dark.gif');
+	--widget-camera-loader-background: var(--widget-loader-background);
+	--widget-camera-table-border: var(--widget-border);
+	--widget-camera-table-head-background: linear-gradient(to bottom, #333333, #434343);
+	--widget-camera-table-body-background-active: #3f3f3f;
+	--widget-camera-filter-icon: var(--widget-setting-icon);
+	--widget-camera-filter-icon-hover: var(--widget-setting-icon-hover);
+	--widget-camera-datepicker-background: linear-gradient(to bottom, #333333, #434343);
+	--widget-camera-datepicker-button-hover: #575757;
+	--widget-camera-datepicker-icon: #D5D5D5;
+	--widget-camera-datepicker-date: #777777;
+}
+
+.camera{
+	width:100%;
+	height:100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.camera-video{
+	font-size:0;
+	position: relative;
+}
+
+.camera-video-container{
+	width:100%;
+	height:100%;
+	background: var(--widget-camera-placeholder);
+	background-repeat:no-repeat;
+    background-size:contain;
+	background-position: center center;
+	position:relative;
+	top:1px;
+}
+
+.camera-video-loader{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:72px;
+	height:72px;
+	margin:-36px 0 0 -36px;
+	display:none;
+	border-radius:10px;
+	z-index:2;
+	background-image: var(--widget-camera-loader);
+	background-color: var(--widget-camera-loader-background);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.camera-video-container img,
+.camera-video-container video,
+.camera-video-container svg{
+	width:100%;
+	height:100%;
+	object-fit: contain;
+}
+
+.camera-table {
+    /*width: 100%;*/
+	/*height:100px;*/
+/*    border-collapse: collapse;*/
+	border-collapse: separate;
+    border-spacing: 0;
+}
+
+.camera-table thead tr th { 
+    text-align: left;
+    background: var(--widget-camera-table-head-background);
+    font-size: 13px;
+    font-weight: bold;
+	border-bottom: 1px solid var(--widget-camera-table-border);
+}
+
+.camera-table tbody {
+    border-top: 1px solid var(--widget-camera-table-border);
+}
+
+.camera-table tbody td, .camera-table thead th {
+    border-right: 1px solid var(--widget-camera-table-border);
+	padding: 3px 14px;
+
+}
+
+.camera-table thead th{
+	padding: 6px 10px;
+}
+
+.camera-table tbody td{
+	padding: 3px 10px;
+	border-bottom: 1px solid var(--widget-camera-table-border);
+}
+
+.camera-table tbody td:last-child, .camera-table thead th:last-child {
+    border-right: none;
+}
+
+.camera-table tbody tr:last-child td{
+/*
+	border-bottom: none;
+*/
+}
+
+.camera-table.sticky thead tr th{
+	position: sticky;
+	top: 0;
+/*	box-shadow: 1px 1px var(--widget-camera-table-border), inset 0 1px var(--widget-camera-table-border);*/
+    z-index: 1;
+}
+
+.camera-event{
+	height: 100%;
+	flex-grow: 1;
+	position: relative;
+}
+
+.camera-event > div.event-list{
+	overflow-x:hidden;
+	overflow-y:scroll;
+	height: 100%;
+	position: absolute;
+	top: 1px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.camera-event > div.event-list > table > thead > tr > th,
+.camera-event > div.event-list > table > tbody > tr > td{
+	padding: 6px !important;
+}
+
+.camera-event > div.event-list > table > tbody{
+	display:none;
+}
+
+.camera-event > div.event-list > table > tbody > tr > td{
+	cursor:pointer;
+}
+
+.camera-event > div.event-list > table > tbody > tr.active > td{
+	background-color: var(--widget-camera-table-body-background-active);
+}
+
+.camera-event > div.event-list > table > tbody.list tr:last-child td{
+/*	border-bottom-width:0;*/
+}
+
+.camera-event > div.event-list > table > tbody.no-event tr td{
+	border-width:0;
+	cursor:default;
+}
+
+.camera-event > div.event-list > table > tbody.no-event tr.text td{
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+
+.camera-event > div.event-list > table > tbody.no-event tr:first-child td,
+.camera-event > div.event-list > table > tbody.no-event tr:last-child td{
+	visibility: hidden;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.camera-event > div.event-list > table > tbody.no-event tr:first-child td div,
+.camera-event > div.event-list > table > tbody.no-event tr:last-child td div{
+	height:0;
+	position:relative;
+	left:-100px;
+	top:-9999px;
+}
+
+.camera-device > div.device-list{
+	overflow-x:hidden;
+	overflow-y:scroll;
+	height: 100%;
+}
+
+.camera-device > div.device-list > table > thead > tr > th,
+.camera-device > div.device-list > table > tbody > tr > td{
+	padding: 8px !important;
+}
+
+.camera-device > div.device-empty{
+	display:table;
+	width:100%;
+	height:100%;
+}
+
+.camera-device > div.device-empty > div{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.camera-filter{
+	position:absolute;
+	right:3px;
+	top:50%;
+	margin-top:-9px;
+	font-size:0;
+	cursor: pointer;
+}
+
+.camera-filter svg{
+	fill:var(--widget-camera-filter-icon);
+}
+
+.camera-filter:hover svg{
+	fill:var(--widget-camera-filter-icon-hover);
+}
+
+.camera-datepicker{
+	background:var(--widget-camera-datepicker-background);
+	border-top:1px solid var(--widget-camera-table-border);
+}
+
+.camera-datepicker > table{
+	border-spacing:0px;
+	border-collapse:collapse;
+	border-width:0;
+	margin:0 auto;
+}
+
+.camera-datepicker-button{
+	vertical-align: middle;
+	font-size:0;
+	padding:0 5px;
+	cursor: pointer;
+}
+
+.camera-datepicker-button svg{
+	fill:var(--widget-camera-datepicker-icon);
+}
+
+.camera-datepicker-button:hover{
+	background-color:var(--widget-camera-datepicker-button-hover);
+}
+
+.camera-datepicker-year-month-wrapper{
+	vertical-align: middle;
+	text-align:center;
+	font-size: 18px;
+	border-right: 1px solid var(--widget-camera-table-border);
+	padding:0 5px;
+}
+
+.camera-datepicker-day{
+	padding:5px 5px 0 5px;
+	font-size:13px;
+	color: var(--widget-camera-datepicker-date);
+	text-align:center;
+}
+
+.camera-datepicker-date{
+	text-align: center;
+	padding:5px;
+	font-weight:bold;
+	position: relative;
+	cursor: pointer;
+}
+
+.camera-datepicker-date span{
+	color:transparent;
+}
+
+.camera-datepicker-date div{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right: 0;
+	padding:inherit;
+	text-align:center;
+}
+
+.camera-datepicker-date.active div,
+.camera-datepicker-date:not(.empty):hover div{
+	border-radius:100px;
+	background-color: var(--widget-camera-datepicker-button-hover);
+}
+
+.camera-datepicker-date.empty div{
+	color: var(--widget-camera-datepicker-date);
+	font-weight:normal;
+	cursor: default;
+}

@@ -1,0 +1,62 @@
+.thumbnail-selector-out{
+	position:absolute;
+	height:100%;
+	/*box-sizing:border-box;*/
+	background-color:rgba(204, 204, 204, 0.5);
+	cursor:default;
+	width:20px;
+}
+
+.thumbnail-selector-out.left{
+	left:0;
+	border-right: 1px solid #545454;
+}
+
+.thumbnail-selector-out.right{
+	right:0;
+	border-left: 1px solid #545454;
+}
+
+/*
+.thumbnail-selector-out.range{
+	border: 1px solid #545454;
+	border-width:0 1px 0 1px;
+	background-color:rgba(255, 255, 255, 0.5);
+}
+*/
+.thumbnail-selector-handler{
+	position:absolute;
+	border:1px solid #545454;
+	background-color:#FFF;
+	width:12px;
+	height:28px;
+	border-radius:3px;
+	z-index:2;
+	cursor:e-resize;
+	top:50%;
+	margin-top:-14px;
+}
+
+.thumbnail-selector-out.left .thumbnail-selector-handler{
+	right:0;
+	margin-right:-7px;
+}
+
+.thumbnail-selector-out.right .thumbnail-selector-handler{
+	left:0;
+	margin-left:-7px;
+}
+
+.thumbnail-selector-handler div{
+	position:absolute;
+	border:1px solid #545454;
+	border-width:0 1px 0 1px;
+	width:4px;
+	height:8px;
+	left:50%;
+	margin-left:-2px;
+	top:50%;
+	margin-top:-4px;
+	z-index:3;
+	box-sizing:border-box;
+}

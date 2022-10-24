@@ -1,0 +1,48 @@
+.widget-overlay-tag{
+	position:absolute !important;
+	/*cursor:move;*/
+	border: 2px solid #686f77;
+	background: #fff;
+	border-radius: 3px;
+    overflow: hidden;
+}
+
+.widget-overlay-tag div{
+	/*display: inline-block;*/
+	padding: 4px;
+}
+
+.widget-overlay-tag .overlay-data-title{
+	background: #a4ddff;
+	min-width: 20px;
+	text-align: center;
+	min-height: 17px;
+}
+
+.widget-overlay-tag .overlay-data-value{
+	min-width: 50px;
+	text-align: center;
+	min-height: 17px;
+}
+
+.widget-overlay-tag .overlay-data-detail{
+	float: none;
+	display: none;
+}
+
+/*拖曳游標效果*/
+#previewDiv .widget-overlay-tag {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+/*拖曳游標效果(按住)*/
+ /* (Optional) Apply a "closed-hand" cursor during drag operation. */
+#previewDiv .widget-overlay-tag:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+

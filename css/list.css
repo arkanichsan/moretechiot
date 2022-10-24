@@ -1,0 +1,79 @@
+.list-table{
+	display:table;
+	width:100%;
+	margin-top:20px;
+}
+
+.list-table-row{
+	display:table-row;
+}
+
+.list-table-cell{
+	display:table-cell;
+	padding:5px 5px 5px 5px;
+	border-bottom: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+.list-table-row-group{
+	display:table-row-group;
+}
+
+.list-table-header-group{
+	display:table-header-group;
+}
+
+.list-table-header-group .list-table-cell{
+	border-bottom: 2px solid #ccc;
+	font-size: 13px;
+	color: #888;
+}
+
+.list-table-footer-group{
+	display:table-footer-group;
+}
+
+.list-table-footer-group .list-table-cell{
+	border-top: 1px solid #ccc;
+	border-bottom-width:0px;
+}
+
+.list-table-row-group .list-table-row:nth-child(odd) .list-table-cell{
+	background-color:#F5F5F5
+}
+
+.list-table-row-group .list-table-row:nth-child(even) .list-table-cell{
+	background-color:#FBFBFB;
+}
+
+/* table */
+table.list{
+	width:100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+table.list td{
+	padding:5px 5px 5px 5px;
+	border-bottom: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+table.list thead td{
+	border-bottom: 2px solid #ccc;
+	font-size: 13px;
+	color: #888;
+}
+
+table.list tfoot td{
+	border-top: 2px solid #ccc;
+	border-bottom-width:0px;
+}
+
+table.list tbody tr:nth-child(odd) td{
+	background-color:#F5F5F5
+}
+
+table.list tbody tr:nth-child(even) td{
+	background-color:#FBFBFB;
+}

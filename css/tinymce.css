@@ -1,0 +1,60 @@
+.tox svg {
+    width: auto;
+    height: auto;
+}
+.tox-dialog__footer{
+    text-align: center !important;
+	display: block !important;
+	line-height: 0 !important;
+}
+.tox-dialog__footer-end{
+	display: inline-block !important;
+}
+.tox-dialog__footer-end > .tox-button{
+	padding: 6px 20px !important;
+    font-size: 15px !important;
+    color: #fff !important;
+    border-radius: 3px !important;
+    cursor: pointer !important;
+    border: 1px solid #3079ed !important;
+    background-color: #4d90fe !important;
+    background-image: linear-gradient(to bottom, #4d90fe, #4787ed) !important;
+	font-weight: normal !important;
+    line-height: normal !important;
+	width: 100px !important;
+	float:left;
+}
+.tox-dialog__footer-end > .tox-button:hover{
+	border: 1px solid #2f5bb7 !important;
+    background-color: #357ae8 !important;
+    background-image: linear-gradient(to bottom, #4d90fe, #357ae8) !important;
+}
+.tox-dialog__footer-end > .tox-button:active{
+	box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2) !important;
+	color:transparent !important;
+	text-shadow: 1px 1px rgba(255, 255, 255, 1) !important;
+}
+.tox-dialog__footer-end > .tox-button--secondary{
+	color: #606060 !important;
+    border: 1px solid #B3B3B3 !important;
+    background-color: #fefefe !important;
+    background-image: linear-gradient(to bottom, #fefefe, #f2f2f2) !important;
+	float:right;
+}
+.tox-dialog__footer-end > .tox-button--secondary:hover{
+	border: 1px solid #7D7D7D !important;
+    background-color: #e6e8e8 !important;
+    background-image: linear-gradient(to bottom, #fefefe, #e6e8e8) !important;
+}
+.tox-dialog__footer-end > .tox-button--secondary:active{
+	box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2) !important;
+	color:transparent !important;
+	text-shadow: 1px 1px rgba(96, 96, 96, 1) !important;
+}
+.tinymce_content{
+	overflow: auto !important;
+}
+
+.tinymce_content p {
+	margin: 0px;
+}
