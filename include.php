@@ -2,7 +2,7 @@
 /*CONFIG START*/
 define("WEB_PROTOCOL", "http://");
 define("WEB_HOST", "127.0.0.1:81");
-define("WEB_NAME", "ICP DAS IoTstar");
+define("WEB_NAME", "Moretech");
 define("WEB_SIGNUP_PAGE", "1");
 define("DB_IS_MSSQL", false);
 define("DB_IS_MYSQL", true);

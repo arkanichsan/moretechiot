@@ -6,7 +6,7 @@ function customized_header(){
 <style type="text/css">
 .form-title{
 	border: 1px solid #ccc;
-	background: linear-gradient(#035002 0px, #1bff00 250%);
+	background: linear-gradient(#035002 0px, #eee 600%);
 	margin-bottom: 1px;
 	padding: 12px 14px;
 	font-size: 13px;

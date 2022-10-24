@@ -483,9 +483,9 @@ $(function() {
 	}
 ?>
 	<div class="form-wrapper">
-		<div style="text-align:center;">
+		<div style="text-align:center; color: #035002;">
 			<img src="./image/login logo.png" style="float:none;"><br>
-			IoTstar v<?=VERSION?> © ICP DAS Co., Ltd. All Rights Reserved
+			Monitoring Refrigeration v3.1.0 © MORETECH-UR 2022
 		</div>
 
 		<div id="form-container">

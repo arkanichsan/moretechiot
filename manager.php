@@ -143,7 +143,7 @@ svg, svg * {
 
 #side-bar{
 	width:230px;
-	background-color:#10940e;
+	background-color:#eee;
 }
 
 #container{
@@ -190,7 +190,7 @@ body.dark #content{
 	/* margin-top:5px; */
 	padding:10px 0 10px 15px;
     font-weight: bold;
-	background:linear-gradient(#035002 0px, #00000000 90%);
+	background:linear-gradient(#035002 0px, #fff 600%);
 }
 
 .nav-group:first-child{
