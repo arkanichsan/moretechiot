@@ -92,7 +92,7 @@ input.red[type=button]:not([disabled]):hover, input.red[type=submit]:not([disabl
 input.red[type=button]:not([disabled]).hover, input.red[type=submit]:not([disabled]).hover, button.red:not([disabled]).hover, .button.red:not([disabled]).hover{
 	border: 1px solid #810300;
     background-color: #a00005;
-    background-image: linear-gradient(to bottom, #b90004, #a00005);
+    background-image: linear-gradient(#035002 0px, #eee 600%);
 }
 
 input.red[type=button]:not([disabled]):active, input.red[type=submit]:not([disabled]):active, button.red:not([disabled]):active, .button.red:not([disabled]):active{
