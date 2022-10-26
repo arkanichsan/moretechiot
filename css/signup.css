@@ -64,22 +64,22 @@ body {
 	width:100px;
 }
 
-.signup-block-step-circle{
-	width:50px;
-	height:50px;
-	border-radius: 50%;
-	line-height:50px;
-	text-align:center;
-	font-weight:bold;
-	font-size:25px;
-	box-shadow:0px 0px 0px 3px #757575;
-	margin: auto;
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgb(228, 228, 228) 100%);
-	color:#757575;
+.signup-block-step-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    box-shadow: 0px 0px 13px 3px #035002;
+    margin: auto;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgb(255 255 255) 100%);
+    color: #035002;
 }
 
 .signup-block-step-circle.finish{
-	background: linear-gradient(to bottom, rgba(210,210,210,1) 0%,rgba(173,173,173,1) 100%);
+	background: linear-gradient(to bottom, #035002 0%,rgba(173,173,173,1) 100%);
 	color:#FFF;
 }
 

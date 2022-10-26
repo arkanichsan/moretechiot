@@ -67,7 +67,7 @@ function customized_header(){
 	border-width:1px 0;
 	border-style:solid;
 	border-color:#ccc;
-	background: linear-gradient(#035002 0px, #1bff00 250%);
+	background: linear-gradient(#035002 0px, #fff 600%);
 	font-size:11px;
 	font-weight:bold;
 	color: #eeeeee;

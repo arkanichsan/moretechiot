@@ -138,7 +138,7 @@ function customized_header(){
 }
 
 .module-block-content{
-	color:#444;
+	color:#03500285;
 }
 
 .module-block-control{
@@ -163,7 +163,7 @@ function customized_header(){
 .module-text{
 	padding:40px 0;
 	text-align:center;
-	color:rgb(192, 192, 195);
+	color:#03500285;
 	font-size:160%;
 	font-weight:bold;
 	display:block;
@@ -298,7 +298,7 @@ function customized_header(){
 }
 
 .firmware-update-method-description{
-	color:#707070;
+	color:##035002c9;
 	line-height:1.5;
 }
 

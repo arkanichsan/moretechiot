@@ -67,9 +67,10 @@ function customized_header(){
 	border-width:1px 0;
 	border-style:solid;
 	border-color:#ccc;
-	background: #fefefe;
+	background-image: linear-gradient(#035002 0px, #fff 600%);
 	font-size:11px;
 	font-weight:bold;
+	color: #eeeeee;
 }
 
 .select-option{
@@ -325,7 +326,7 @@ function customized_header(){
 }
 
 #list .list-table-cell svg{
-	fill:#707070;
+	fill:##035002c9;
 }
 #list .list-table-cell.hover svg{
 	fill:#2a2a2a;

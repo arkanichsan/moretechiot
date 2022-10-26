@@ -35,7 +35,7 @@ body #content{
 	--widget-resize-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYwMCIgd2lkdGg9IjYiIGhlaWdodD0iNiI+PHBhdGggZD0iTTYgNkgwVjQuMmg0LjJWMEg2djZ6IiBvcGFjaXR5PSIuMzAyIi8+PC9zdmc+");
 	--widget-setting-border: #888888;
 
-	--widget-setting-icon: #707070;
+	--widget-setting-icon: ##035002c9;
 	--widget-setting-icon-hover: #2A2A2A;
 
 	--widget-setting-text: #606060;
@@ -82,7 +82,7 @@ body.dark #content {
 #dashboard-no-exist-container,
 #dashboard-expired-container{
 	text-align:center;
-	color:#707070;
+	color:##035002c9;
 	padding:100px 0;
 }
 
@@ -542,7 +542,7 @@ body.dark #content {
 	width:100%;
 	height:100%;
 	text-align:center;
-	color:#707070;
+	color:##035002c9;
 }
 
 .channle-list-no-exist-title{
@@ -656,7 +656,7 @@ body.dark #content {
 }
 
 #window-add-channel-containers{
-	color:#707070;
+	color:##035002c9;
 	background-color:#FFF;
 	overflow-x:hidden;
 	overflow-y:scroll;
@@ -876,7 +876,7 @@ body.dark #content {
 	vertical-align:middle;
 	text-align:center;
 	text-align: center;
-    color: #707070;
+    color: ##035002c9;
 }
 
 #link-settings-table{
@@ -2020,7 +2020,7 @@ function loadDeviceList(){
 						}).css({
 							"background": "#e5e9eb",
 							"fontWeight": "bold",
-							"color": "#707070"
+							"color": "##035002c9"
 						}).text($device.attr("account_nickname") + "(" + $device.attr("account_username") + ")").appendTo("#window-add-channel-selector");
 					}
 

@@ -25,8 +25,8 @@ function customized_header(){
 }
 
 .group-nav-item{
-	color:#707070;
-	fill:#707070;
+	color:##035002c9;
+	fill:##035002c9;
 	line-height:1.5;
 	padding:10px 10px 10px 10px;
 	border: 1px solid transparent;
@@ -65,7 +65,7 @@ function customized_header(){
 }
 
 .group-nav-control svg{
-	fill:#707070;
+	fill:##035002c9;
 }
 
 .group-nav-control svg.warning{
@@ -85,14 +85,14 @@ function customized_header(){
 }
 
 .group-list-title{
-	color:#707070;
+	color:##035002c9;
 	font-weight:bold;
 	margin-bottom:10px;
 	position:relative;
 }
 
 .group-list-container{
-	color:#707070;
+	color:##035002c9;
 	background-color:#fff;
 	/*box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);*/
 	margin:0px 0 25px 0;
@@ -215,7 +215,7 @@ function customized_header(){
 #group-no-group-exist,
 #group-no-module-exist{
 	text-align:center;
-	color:#707070;
+	color:##035002c9;
 	padding:100px 0;
 }
 
@@ -280,7 +280,7 @@ function customized_header(){
 }
 
 .window-module-container{
-	color:#707070;
+	color:##035002c9;
 	background-color:#FFF;
 	overflow-x:hidden;
 	overflow-y:scroll;
@@ -709,7 +709,7 @@ function set_group_data_list(data){
 						var loop_nickname = $($l_xmlElement[loop_num]).attr("nickname");
 						str_html += "<div class='group-list-cell'>";
 						str_html += "<input type='checkbox' id='select_ck_" + account_uid + "_" + data_uid + "' data_uid='"+data_uid+"' controller_module='"+ account_uid + "_" +controller_uid+"_"+module_uid+"' model_type='loop' onclick='onChangeCheckLoop(this);'>";
-						str_html += "<label for='select_ck_" + account_uid + "_" + data_uid+"' style='color: #707070;'><?=$lang['GROUP']['LOOP'];?>"+loop_name;
+						str_html += "<label for='select_ck_" + account_uid + "_" + data_uid+"' style='color: ##035002c9;'><?=$lang['GROUP']['LOOP'];?>"+loop_name;
 						
 						if(loop_nickname != "")
 							str_html += "(" + loop_nickname + ")";
@@ -780,7 +780,7 @@ function loadcontroller(){
 				
 				var $xmlElement = $($shareuser_xmlElement[shareuseridx]).find('list').filter("[model_name^='PMC'],[model_name^='PMD']");
 				if($xmlElement.length > 0)
-					$("#window-module-selector").append($("<option disabled style='background: #e5e9eb; font-weight: bold; color: #707070;'></option>").text(controller_name));
+					$("#window-module-selector").append($("<option disabled style='background: #e5e9eb; font-weight: bold; color: ##035002c9;'></option>").text(controller_name));
 				for(var shareidx = 0; shareidx < $xmlElement.length; shareidx++)
 				{
 					modelname = $($xmlElement[shareidx]).attr('model_name');

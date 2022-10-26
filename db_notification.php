@@ -84,7 +84,7 @@ function customized_body(){
 ?>
 <div style="padding:20px;">
 	<div class="title" style="position:relative;"><?=$lang['NOTIFICATION']['EVENT_LIST'];?></div>
-	<div id="no-notification-exist" style="text-align: center; color: #707070; padding: 100px 0; display: none;">
+	<div id="no-notification-exist" style="text-align: center; color: ##035002c9; padding: 100px 0; display: none;">
 		<div class="group-no-exist-title"><?=$lang['NOTIFICATION']['NO_EVENT_NOTIFICATION'];?></div>
 	</div>
 	<div class="module-text" id="module-text-online"><?=$lang['NOTIFICATION']['LOADING'];?></div>

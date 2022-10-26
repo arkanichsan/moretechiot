@@ -137,14 +137,14 @@ widget.button = {
 												$("<div></div>").css("fontSize", "0").attr({
 													tip: "Remove",
 													tip_position: "right"
-												}).append($(createSVGIcon("image/ics.svg", "delete")).css("fill", "#707070")).css({"cursor": "pointer"}).click(function(){
+												}).append($(createSVGIcon("image/ics.svg", "delete")).css("fill", "##035002c9")).css({"cursor": "pointer"}).click(function(){
 													document.getElementById('uploadIcon').value = '';
 													$(this.previousSibling).css("background-image", "");
 													$("#div_icon").hide();
 												}).hover(function(){
 													$(this).find("svg").css("fill", "#2A2A2A");
 												}, function(){
-													$(this).find("svg").css("fill", "#707070");
+													$(this).find("svg").css("fill", "##035002c9");
 												})
 											).show();
 
@@ -197,10 +197,10 @@ widget.button = {
 					$("<div></div>").css("fontSize", "0").attr({
 						tip: "<?=$lang['WIDGET']['BUTTON']['REMOVE'][$language]?>",
 						tip_position: "right"
-					}).append($(createSVGIcon("image/ics.svg", "delete")).css("fill", "#707070")).css({"cursor": "pointer"}).click(function(){$(this.previousSibling).css("background-image", "");$("#div_icon").hide();}).hover(function(){
+					}).append($(createSVGIcon("image/ics.svg", "delete")).css("fill", "##035002c9")).css({"cursor": "pointer"}).click(function(){$(this.previousSibling).css("background-image", "");$("#div_icon").hide();}).hover(function(){
 						$(this).find("svg").css("fill", "#2A2A2A");
 					}, function(){
-						$(this).find("svg").css("fill", "#707070");
+						$(this).find("svg").css("fill", "##035002c9");
 					})
 				)
 

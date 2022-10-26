@@ -158,7 +158,7 @@ svg, svg * {
 }
 
 body #content{
-	--default-text: #2A2A2A;
+	--default-text: #035002e3;
 }
 
 body.dark #content{
@@ -186,9 +186,9 @@ body.dark #content{
 
 .nav-group{
 	color:#dcdcdc;
-	font-size:12px;
+	font-size:13px;
 	/* margin-top:5px; */
-	padding:10px 0 10px 15px;
+	padding:12px 0 11px 15px;
     font-weight: bold;
 	background:linear-gradient(#035002 0px, #fff 600%);
 }
@@ -238,7 +238,7 @@ body.dark #content{
 }
 
 .nav-item{
-	color:#10940e;
+	color:#035002d9;
 	/* text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8); */
 	cursor: pointer;
     /* border-right: solid 5px transparent; */
@@ -260,7 +260,7 @@ body.dark #content{
 }
 
 .nav-item.side{
-	padding:15px 0px 15px 15px;
+	padding:10px 0px 10px 15px;
 	/* border-bottom: solid 1px #1b1b1b; */
 	background: linear-gradient(#eee 0px, #eee 100%);
 }
@@ -294,9 +294,9 @@ body.dark #content{
 }
 
 .count-block{
-	border: 1px solid #a23d30;
-    border-radius: 3px;
-    background: linear-gradient(to bottom, rgba(221,83,65,1) 0%, rgba(162,61,48,1) 100%);
+	border: 1px solid #eee;
+    border-radius: 6px;
+    background: linear-gradient(#a11e01 0px, #fefefe 300%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd5341', endColorstr='#a23d30', GradientType=0);
     color: #FFF;
     font-weight: bold;
@@ -306,7 +306,7 @@ body.dark #content{
 
 #wait-loader-container{
 	position:absolute;
-	padding:20px;
+	padding: 1px;
 	background-color:rgba(255, 255, 255, 0.9);
 	top:50%;
 	left:50%;
@@ -491,15 +491,29 @@ catch (Exception $e) {
 					</svg>&nbsp;&nbsp;<span><?=$lang['MANAGER']['POWER_METER_LOOP'];?></span></div>
 
 				<div class="nav-group"><?=$lang['MANAGER']['SYSTEM_INFORMATION_AND_SETTING'];?></div>
-				<div class="nav-item side<?=active_check('settings')?>" onClick="location='./?act=settings';"><svg><use xlink:href="image/ics.svg#settings"></use></svg>&nbsp;&nbsp;<span><?=$lang['MANAGER']['ACCOUNT_MAINTENANCE'];?></span></div>
-				<div class="nav-item side<?=active_check('db_setting')?>" onClick="location='./?act=db_setting';"><svg><use xlink:href="image/ics.svg#settings"></use></svg>&nbsp;&nbsp;<span><?=$lang['MANAGER']['DATABASE_AND_EVENT_SETTING'];?></span></div>
-				<div class="nav-item side<?=active_check('db_notification')?>" onClick="location='./?act=db_notification';"><svg><use xlink:href="image/ics.svg#notifications"></use></svg>&nbsp;&nbsp;<span><?=$lang['MANAGER']['EVENT_LIST'];?></span><div id="unread_notification" class="count-block" style="float:right;margin-right:10px; display:none;"></div></div>
-				<div class="nav-item side<?=active_check('db_info')?>" onClick="location='./?act=db_info';"><svg><use xlink:href="image/ics.svg#info"></use></svg>&nbsp;&nbsp;<span><?=$lang['MANAGER']['DATABASE_TABLE_LIST'];?></span></div>
-				<div class="nav-item side" onClick="location='./?act=settings';"><svg><use xlink:href="image/ics.svg#account_box"></use></svg>&nbsp;<span id="account-username"><?=$row["Nickname"]?></span>(<?=$row["Username"]?>)</div>
-				<div class="nav-item side" onClick="logout();"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
-  					<path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
-  					<path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
-					</svg>&nbsp;<span><?=$lang['MANAGER']['LOGOUT'];?></span></div>
+				<div class="nav-item side<?=active_check('settings')?>" onClick="location='./?act=settings';"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+			    	<path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+					<path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+					</svg>&nbsp;&nbsp;<span><?=$lang['MANAGER']['ACCOUNT_MAINTENANCE'];?></span></div>
+				<div class="nav-item side<?=active_check('db_setting')?>" onClick="location='./?act=db_setting';"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+  					<path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+  					<path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+					</svg>&nbsp;&nbsp;<span><?=$lang['MANAGER']['DATABASE_AND_EVENT_SETTING'];?></span></div>
+				<div class="nav-item side<?=active_check('db_notification')?>" onClick="location='./?act=db_notification';"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
+  					<path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"/>
+  					<path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/>
+  					<path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"/>
+					</svg>&nbsp;&nbsp;<span><?=$lang['MANAGER']['EVENT_LIST'];?></span><div id="unread_notification" class="count-block" style="float:right;margin-right:10px; display:none;"></div></div>
+				<div class="nav-item side<?=active_check('db_info')?>" onClick="location='./?act=db_info';"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
+  					<path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"/>
+  					<path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/>
+  					<path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"/>
+					</svg>&nbsp;&nbsp;<span><?=$lang['MANAGER']['DATABASE_TABLE_LIST'];?></span></div>
+				<!-- <div class="nav-item side" onClick="location='./?act=settings';"><svg><use xlink:href="image/ics.svg#account_box"></use></svg>&nbsp;<span id="account-username"><?=$row["Nickname"]?></span>(<?=$row["Username"]?>)</div> -->
+				<div class="nav-item side" onClick="logout();"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+  					<path d="M7.5 1v7h1V1h-1z"/>
+					<path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
+					</svg>&nbsp;&nbsp;<span><?=$lang['MANAGER']['LOGOUT'];?></span></div>
 			</div>
 		</div>
 
@@ -542,7 +556,7 @@ else{
 					<div id="popup-message"></div>
 				</div>
 				<div class="popup-footer">
-					<input style="background-image: linear-gradient(#a11e01 0px, #fefefe 300%);" type="button" value="<?=$lang['OK'];?>" onClick="popupOK();"><span id="popup-cancel-button">&nbsp;&nbsp;<input type="button" class="gray" value="<?=$lang['CANCEL'];?>" onClick="popupCancel();"></span>
+					<input style="background-image: linear-gradient(#035002 0px, #fefefe 300%);" type="button" value="<?=$lang['OK'];?>" onClick="popupOK();"><span id="popup-cancel-button">&nbsp;&nbsp;<input type="button" class="gray" value="<?=$lang['CANCEL'];?>" onClick="popupCancel();"></span>
 				</div>
 			</div>
 		</div>

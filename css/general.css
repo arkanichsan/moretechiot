@@ -2,7 +2,7 @@ body{
 	line-height: 1.15;
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 15px;
-	color:#2A2A2A;
+	color:#053002;
 }
 
 *:focus {
@@ -10,7 +10,7 @@ body{
 }
 
 input[type=text], input[type=password], input[type=number], input[type=date], input[type=time], textarea, select{
-    color: #555;
+    color: #035002d6;
     background-color: #fff;
     border: 1px solid #ccc;
 	border-radius: 10px;
@@ -63,36 +63,36 @@ input[type=button]:not([disabled]):active, input[type=submit]:not([disabled]):ac
 
 input.gray[type=button], input.gray[type=submit], button.gray, .button.gray{
     color: #fefefe;
-	border: 1px solid #B3B3B3;
+	/* border: 1px solid #B3B3B3; */
     background-color: #fefefe;
-    background-image: linear-gradient(to bottom, #035002, #035002);
+    background-image: linear-gradient(#a11e01 0px, #fff 600%);
 }
 
 input.gray[type=button]:not([disabled]):hover, input.gray[type=submit]:not([disabled]):hover, button.gray:not([disabled]):hover, .button.gray:not([disabled]):hover,
 input.gray[type=button]:not([disabled]).hover, input.gray[type=submit]:not([disabled]).hover, button.gray:not([disabled]).hover, .button.gray:not([disabled]).hover{
-	border: 1px solid #7D7D7D;
+	border: 0px solid #7D7D7D;
     background-color: #e6e8e8;
-    background-image: linear-gradient(to bottom, #035002, #035002);
+    background-image: linear-gradient(to bottom, #a11e01);
 }
 
 input.gray[type=button]:not([disabled]):active, input.gray[type=submit]:not([disabled]):active, button.gray:not([disabled]):active, .button.gray:not([disabled]):active{
 	box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
 	color:transparent;
-	text-shadow: 1px 1px rgba(96, 96, 96, 1);
+	text-shadow: 1px 1px rgb(255, 255, 255);
 }
 
 input.red[type=button], input.red[type=submit], button.red, .button.red{
     color: #FFFFFF;
 	border: 1px solid #fefefe;
     background-color: #b90004;
-    background-image: linear-gradient(to bottom, #b90004, #b65a5d);
+    background-image: linear-gradient(#a11e01 0px, #fff 600%);
 }
 
 input.red[type=button]:not([disabled]):hover, input.red[type=submit]:not([disabled]):hover, button.red:not([disabled]):hover, .button.red:not([disabled]):hover,
 input.red[type=button]:not([disabled]).hover, input.red[type=submit]:not([disabled]).hover, button.red:not([disabled]).hover, .button.red:not([disabled]).hover{
-	border: 1px solid #810300;
+	border: 0px solid #810300;
     background-color: #a00005;
-    background-image: linear-gradient(#035002 0px, #eee 600%);
+    background-image: linear-gradient(#a11e01 0px, #eee 600%);
 }
 
 input.red[type=button]:not([disabled]):active, input.red[type=submit]:not([disabled]):active, button.red:not([disabled]):active, .button.red:not([disabled]):active{

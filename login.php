@@ -53,9 +53,9 @@ html, body{
 	width:30px;
 	height:100%;
 	left:0px;
-	border:1px solid #ccc;
+	/* border:1px solid #ccc; */
 	border-right-width:0px;
-	background-color: #eee;
+	/* background-color: #eee; */
 }
 
 .form-icon{
@@ -110,7 +110,7 @@ html, body{
 	transform: translateX(-50%);
 	width:500px;
 	background-color:white;
-	border:1px #707070 solid;
+	border:1px ##035002c9 solid;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 
 }

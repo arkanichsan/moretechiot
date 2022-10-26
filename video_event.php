@@ -8,7 +8,7 @@ function customized_header(){
 #event-no-exist-container,
 #device-no-exist-container{
     text-align: center;
-    color: #707070;
+    color: ##035002c9;
     padding: 100px 0;
 	display:none;
 }

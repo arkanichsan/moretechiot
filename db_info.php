@@ -26,7 +26,7 @@ function customized_header(){
 	z-index: 1;
     overflow: hidden;
 	font-weight:bold;
-	color:rgb(103, 106, 108);
+	color:#3c79dc;
 }
 
 .device-nav-database span{
@@ -61,7 +61,7 @@ function customized_header(){
 
 .device-nav-item.active{
 	border: 1px solid #ccc;
-	border-left: 4px solid #ccc;
+	border-left: 4px solid #035002c2;
 	background-color:#fff;
 	/*box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);*/
 }
@@ -75,7 +75,7 @@ function customized_header(){
 .device-nav-item.active > span,
 .device-nav-item:hover > svg,
 .device-nav-item:hover > span{
-	color:#2A2A2A;
+	color:#035002c9;
 	fill:#2A2A2A;
 }
 
@@ -134,16 +134,19 @@ function customized_header(){
 }
 
 .module-list-table-cell.header{
-	background: linear-gradient(to bottom, #ffffff, #efefef);
+	background: linear-gradient(#035002 0px, #fff 600%);
 	font-size: 13px;
 	font-weight: bold;
+	color: #FFF;
+
 }
 
 .module-list-table-cell.split{
-	background: linear-gradient(to bottom, #ffffff, #efefef);
+	background: linear-gradient(to bottom, #0350024d, #efefef);
 	padding: 6px 14px;
 	font-size: 13px;
 	font-weight: bold;
+	color: #035002a3;
 }
 
 .module-list-table-cell:not(.header):not(.split):last-child {

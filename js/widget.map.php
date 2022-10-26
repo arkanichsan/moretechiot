@@ -159,7 +159,7 @@ widget.map = {
 					"boxShadow": "0 0 24px rgba(0, 0, 0, 0.4)",
 					"display": "none"
 				}).append(
-					$("<div></div>").attr({"id":"edit_back"}).css({"cursor": "pointer", "color": "#707070", "position": "relative", "left": "-3px"}).append(
+					$("<div></div>").attr({"id":"edit_back"}).css({"cursor": "pointer", "color": "##035002c9", "position": "relative", "left": "-3px"}).append(
 						$(createSVGIcon("image/ics.svg", "arrow_back")).css({"verticalAlign": "middle"})
 					).append(
 						$("<span></span>").addClass("edit_title").css({"verticalAlign": "middle", "marginLeft": "2px"}).text("<?=$lang['WIDGET']['MAP']['BACK'][$language]?>")
@@ -167,8 +167,8 @@ widget.map = {
 						$(this).find("svg").css("fill", "#2A2A2A");
 						$(this).css("color", "#2A2A2A");
 					}, function(){
-						$(this).find("svg").css("fill", "#707070");
-						$(this).css("color", "#707070");
+						$(this).find("svg").css("fill", "##035002c9");
+						$(this).css("color", "##035002c9");
 					})
 				).append(
 					$("<div></div>").css({
@@ -214,7 +214,7 @@ widget.map = {
 											$("<div></div>").css("fontSize", "0").attr({
 												tip: "Remove",
 												tip_position: "right"
-											}).append($(createSVGIcon("image/ics.svg", "delete")).css("fill", "#707070")).css({"cursor": "pointer"}).click(function(){
+											}).append($(createSVGIcon("image/ics.svg", "delete")).css("fill", "##035002c9")).css({"cursor": "pointer"}).click(function(){
 												document.getElementById('uploadIcon').value = '';
 												$(this.previousSibling).css("background-image", "").removeAttr("base64_code");
 												$("#div_icon").hide();
@@ -235,7 +235,7 @@ widget.map = {
 											}).hover(function(){
 												$(this).find("svg").css("fill", "#2A2A2A");
 											}, function(){
-												$(this).find("svg").css("fill", "#707070");
+												$(this).find("svg").css("fill", "##035002c9");
 											})
 										).show();
 
@@ -373,7 +373,7 @@ widget.map = {
 							"width": "100%",
 							"height": "100%",
 							"textAlign": "center",
-							"color": "#707070"
+							"color": "##035002c9"
 						}).append(
 							$("<tr></tr>").append(
 								$("<td></td>").append(
@@ -863,7 +863,7 @@ widget.map = {
 								$("<div></div>").css("fontSize", "0").attr({
 									tip: "Remove",
 									tip_position: "right"
-								}).append($(createSVGIcon("image/ics.svg", "delete")).css("fill", "#707070")).css({"cursor": "pointer"}).click(function(){
+								}).append($(createSVGIcon("image/ics.svg", "delete")).css("fill", "##035002c9")).css({"cursor": "pointer"}).click(function(){
 									$(this.previousSibling).css("background-image", "").removeAttr("base64_code");
 									$("#div_icon").hide();
 									layer2.clearLayers();
@@ -882,7 +882,7 @@ widget.map = {
 								}).hover(function(){
 									$(this).find("svg").css("fill", "#2A2A2A");
 								}, function(){
-									$(this).find("svg").css("fill", "#707070");
+									$(this).find("svg").css("fill", "##035002c9");
 								})
 							)
 							bindTipEvent($("#div_icon svg").closest("div"));

@@ -58,7 +58,7 @@ function customized_header(){
 	width:100%;
 	height:100%;
 	position: relative;
-	color:#555;
+	color:#035002b8;
 	overflow-x:hidden;
 	overflow-y:auto;
 }
@@ -73,7 +73,7 @@ function customized_header(){
 	border-width:1px 0;
 	border-style:solid;
 	border-color:#ccc;
-	background: #fefefe;
+	background-image: linear-gradient(#035002 0px, #fff 600%);
 	font-size:11px;
 	font-weight:bold;
 }
