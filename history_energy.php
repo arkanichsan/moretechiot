@@ -83,7 +83,7 @@ function customized_header(){
 	width:100%;
 	height:100%;
 	position: relative;
-	color:#555;
+	color:#035002c4;
 	overflow-x:hidden;
 	overflow-y:auto;
 }
@@ -111,6 +111,7 @@ function customized_header(){
 	background: #fff;
 	cursor:pointer;
 	position: relative;
+	color: #035002d1;
 }
 
 .select-option-share{
@@ -344,7 +345,7 @@ function customized_header(){
 	margin-top:-25px;
 	margin-left:-80px;
 	text-align:center;
-	color:#888;
+	color:#035002ad;
 	font-size:24px;
 }
 
